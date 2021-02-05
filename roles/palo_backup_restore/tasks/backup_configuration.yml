@@ -24,7 +24,7 @@
     url: "https://{{provider.ip_address}}/api/?type=config&action=show&key={{key_list.matches[0].key}}"
     return_content: yes
     method: GET
-  register: configuration_string
+  register: configuration
   
 - name: Lookup the Date and Time
   set_fact:
@@ -38,6 +38,6 @@
 - name: Remove Config Header and Save at Backup Path
   connection: local
   copy:
-    content: "{{configuration_string['content']  | regex_replace('<response.*<result>') | regex_replace('</result></response>')}}"
+    content: "{{configuration['content']  | regex_replace('<response.*<result>') | regex_replace('</result></response>')}}"
     dest: '{{backup_path}}backup-{{datetime}}.xml'
 ...
