@@ -4,7 +4,7 @@
     ip_address: '{{ provider.ip_address }}'
     username: '{{ provider.username }}'
     password: '{{ provider.password }}'
-    file: '{{ restore_file }}'
+    file: '{{ backup_path}}{{ restore_file }}'
     category: 'configuration'
   register: result
     
@@ -13,5 +13,5 @@
     ip_address: '{{ provider.ip_address }}'
     username: '{{ provider.username }}'
     password: '{{ provider.password }}'
-    file: "{{ result.filename }}"
+    file: "{{ restore_file }}"
 ...

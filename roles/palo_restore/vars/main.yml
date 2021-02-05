@@ -1,4 +1,4 @@
 ---
-backup_path : '~/ansible-pan-labs/'
-restore_file: ''
+backup_path : 'home/siduser<ID>/ansible-pan-labs/'
+restore_file: 'backup-2021-01-01-00-01.xml'
 ...
