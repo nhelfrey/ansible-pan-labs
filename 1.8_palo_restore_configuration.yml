@@ -4,5 +4,5 @@
   gather_facts: False
 
   roles:
-    - palo_backup_restore
+    - palo_restore
 ...

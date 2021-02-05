@@ -1,0 +1,4 @@
+---
+backup_path : '~/ansible-pan-labs/'
+restore_file: ''
+...
