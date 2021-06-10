@@ -10,4 +10,4 @@ SSH Outbound_s13,Allow Outbound SSH,inside,outside,server_3,ip-netmask,172.31.12
 SSH Outbound_s14,Allow Outbound SSH,inside,outside,server_4,ip-netmask,172.31.128.31,,,any,ssh,application-default,default
 SSH Outbound_s15,Allow Outbound SSH,inside,outside,server_5,ip-netmask,172.31.128.32,,,any,ssh,application-default,default
 SSH Outbound_s16,Allow Outbound SSH,inside,outside,server_6,ip-netmask,172.31.128.33,,,any,ssh,application-default,default
-SSH Outbound_s17,Allow Outbound SSH,inside,outside,server_6,ip-netmask,172.31.128.33,,,any,ssh,application-default,default
+SSH Outbound_s17,Allow Outbound SSH,inside,outside,server_6,ip-netmask,172.31.128.33,googleDNS,ip-netmask,8.8.8.8,dns,application-default,default
